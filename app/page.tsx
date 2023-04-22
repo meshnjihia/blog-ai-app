@@ -1,15 +1,25 @@
-import EmptyState from "./(shared)/EmptyState";
+import Trending from "./(home)/Trending";
+
 
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="md:flex gap-10 mb-5">
+      <div className="px-10 leading-7">
+        <Trending/>
+      <div className="basis-3/4">
+        {/* <Tech />
+        <Travel />
+        <Other /> */}
+        <div className="hidden md:block">
+          {/* <Subscribe/> */}
+        </div>
+      </div>
+        <div className="basis-1/4">
+          {/* <Sidebar/> */}
+      </div>
       
-      <EmptyState
-        title="blog post api generation"
-        subtitle="well you are here"
-        showReset
-      />
+      </div>
 
     </main>
   )
